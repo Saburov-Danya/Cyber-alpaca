@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cyber Alpaca</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+      text-align: center;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image:url('images/backgroundAlpaca.png');
+ /* Замените на URL вашего изображения */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      padding: 0 20px;
+    }
+    /* Добавление затемнения для лучшей читабельности текста */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Прозрачный чёрный слой */
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+      color: #00ffef;
+    }
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin-bottom: 1em;
+      color: #cccccc;
+    }
+    #countdown-description {
+      font-size: 1.5em;
+      color: #00ffef;
+      margin: 10px 0;
+    }
+    #countdown {
+      font-size: 2em;
+      color: #00ffef;
+      text-align: center;
+      margin: 20px 0;
+    }
+    section {
+      padding: 50px;
+    }
+    footer {
+      padding: 20px;
+      text-align: center;
+      background-color: #0d0d0d;
+    }
+    .links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      color: #fff;
+    }
+    .links a.twitter {
+      background-color: #1da1f2;
+    }
+    .links a.website {
+      background-color: #28a745;
+    }
+    .links a:hover {
+      opacity: 0.8;
+    }
+/* Добавьте этот код внутрь <style> */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Cyber Alpaca</h1>
+      <p>
+        An alpaca from the digital age with laser eyes and cybernetic implants. It lives in a dark neon world of crypto-technologies.
+      </p>
+      <p id="countdown-description">
+        Until token launch
+      </p>
+      <div id="countdown">
+        <span id="days">00</span> days
+        <span id="hours">00</span> hours
+        <span id="minutes">00</span> minutes
+        <span id="seconds">00</span> seconds
+      </div>
+    </div>
+  </div>
+
+  <!-- Пример дополнительных секций для прокрутки -->
+  <section style="background-color: #111;">
+    <h2>О проекте</h2>
+    <p>Здесь будет информация о проекте Cyber Alpaca, её миссии и целях.</p>
+  </section>
+  <section style="background-color: #222;">
+    <h2>Токеномика</h2>
+    <p>Информация о токене, его характеристиках и механизмах распределения.</p>
+  </section>
+  <section style="background-color: #333;">
+    <h2>Дорожная карта</h2>
+    <p>Пока это просто пустые пункты, но я сюда чего нибудь добавлю на скорую руку.</p>
+  </section>
+
+  <!-- Футер с ссылками -->
+  <footer>
+    <div class="links">
+      <a href="https://x.com/CyberAlpaca2025" class="twitter" target="_blank">Twitter</a>
+      <a href="https://yourwebsite.com" class="website" target="_blank">Тут будет ссылка на pump.fun</a>
+    </div>
+  </footer>
+</body>
+</html>
+
